@@ -3,6 +3,8 @@ import React from "react";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 
+import { Providers } from "./providers";
+
 import "./globals.css";
 
 // TODO: CHANGE TO YOUR FONT
@@ -23,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased`}>{children}</body>
+      <body className={`${geistSans.variable} antialiased`}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

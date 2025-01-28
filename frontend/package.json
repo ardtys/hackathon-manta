@@ -9,13 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.3",
     "@reduxjs/toolkit": "^2.5.1",
+    "@tanstack/react-query": "^5.65.1",
     "frontend": "file:",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
     "redux-persist": "^6.0.0",
+    "viem": "^2.22.16",
+    "wagmi": "^2.14.9",
     "zellar_frontend": "file:"
   },
   "devDependencies": {

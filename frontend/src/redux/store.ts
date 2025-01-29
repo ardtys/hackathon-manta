@@ -2,9 +2,9 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistReducer } from "redux-persist";
 import { persistStore } from "redux-persist";
 import autoMergeLevel1 from "redux-persist/lib/stateReconciler/autoMergeLevel1";
-import storage from "redux-persist/lib/storage";
 
 import walletReducer from "./reducers/walletSlice";
+import storage from "./storage";
 
 const persistConfig = {
   key: "zellar_state",

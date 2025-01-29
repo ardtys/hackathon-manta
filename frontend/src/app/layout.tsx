@@ -3,6 +3,8 @@ import React from "react";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 
+import LayoutWrapper from "@/components/Layout/LayoutWrapper";
+
 import { Providers } from "./providers";
 
 import "./globals.css";
@@ -15,7 +17,8 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: "Zellar",
-  description: "DeFi Protocol for Lending and Leverage Yield Farming",
+  description:
+    "Zellar is DeFi Protocol for Lending and Leverage Yield Farming!",
 };
 
 export default function RootLayout({
@@ -26,7 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} antialiased`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <LayoutWrapper>{children}</LayoutWrapper>
+        </Providers>
       </body>
     </html>
   );
